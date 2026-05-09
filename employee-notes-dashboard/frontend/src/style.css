@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.form {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dcdfe4;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+
+  transition: 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #111827;
+}
+
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.form button {
+  background: #111827;
+  color: white;
+}
+
+.notes-container {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+.card small {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.edit-btn {
+  background: #2563eb;
+  color: white;
+  flex: 1;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  flex: 1;
+}
